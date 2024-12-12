@@ -8,7 +8,7 @@ db = "assessment"
 
 database = pymysql.connect(host=host, user=user, passwd=password, db=db)
 cursor = database.cursor()
-csv_data = csv.reader(open("C:\\Users\\diaae\\Downloads\\countries_visa_free_access.csv"))
+csv_data = csv.reader(open("countries_visa_free_access.csv"))
 header = next(csv_data)
 print("File is being imported")
 for row in csv_data:
